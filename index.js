@@ -422,7 +422,7 @@ flappybird.Game = Class.extend({
     },
 
     clear: function () {
-        this.context.fillStyle = "#d9ffff";
+        this.context.fillStyle = "#6cff72";
         this.context.fillRect(0, 0, this.width, this.height)
     },
 
