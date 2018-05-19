@@ -297,6 +297,7 @@ flappybird.Game = Class.extend({
         this.lastPipe = null;
         this.state = this.states.WAIT;
         this.canvas.addEventListener("click", this.onclick.bind(this));
+        this.canvas.addEventListener("touchstart", this.onclick.bind(this));
     },
 
     createPipe: function () {
