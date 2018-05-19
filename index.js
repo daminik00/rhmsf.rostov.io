@@ -88,6 +88,7 @@ flappybird.Bird = Class.extend({
     init: function (stage) {
         this.stage = stage;
         this.stage.canvas.addEventListener('mousedown', this.flap.bind(this));
+        this.stage.canvas.addEventListener('touchstart', this.flap.bind(this));
         this.stage.canvas.addEventListener('keydown', this.flap.bind(this));
 
         this.img = new Image();
